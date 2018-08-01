@@ -1,3 +1,4 @@
+using EF6DatafirstGenricRepositoryPattern.DB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,15 @@ namespace EF6DatafirstGenricRepositoryPattern
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            using (var ctx = new SchoolContextModel())
+            {
+                foreach(var studient in ctx.Studient)
+                {
+                    Console.WriteLine($"Studient name: {studient.StudientName}");
+                }
+            }
+
             Console.ReadKey();
         }
     }
