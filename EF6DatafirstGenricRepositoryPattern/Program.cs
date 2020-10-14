@@ -23,7 +23,9 @@ namespace EF6DatafirstGenricRepositoryPattern
 
 			Console.WriteLine("Can say helloworld");
 
-            Console.ReadKey();
+			Console.WriteLine("Can double say helloworld ");
+
+			Console.ReadKey();
         }
     }
 }
