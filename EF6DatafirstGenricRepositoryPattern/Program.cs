@@ -21,6 +21,8 @@ namespace EF6DatafirstGenricRepositoryPattern
                 }
             }
 
+			Console.WriteLine("Can say helloworld");
+
             Console.ReadKey();
         }
     }
